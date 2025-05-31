@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carnes - Supermercado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+    }
+
+    .producto-info h3 {
+      margin: 10px 0 5px;
+      color: #0d47a1;
+    }
+
+    .producto-info p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .precio {
+      color: #2196f3;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .boton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Carnes del Supermercado</h1>
+  </header>
+  <div class="contenedor">
+
+    <div class="producto">
+      <img src="Carnes/carne_de_res.jpg" alt="Carne de res">
+      <div class="producto-info">
+        <h3>Carne de Res (1kg)</h3>
+        <p>Corte premium para asar o guisar. Jugosa y tierna.</p>
+        <p class="precio">Q7.99</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="Carnes/Pechuga_de_pollo.jpg" alt="Pechuga de pollo">
+      <div class="producto-info">
+        <h3>Pechuga de Pollo (1kg)</h3>
+        <p>Sin hueso ni piel. Alta en proteínas y baja en grasa.</p>
+        <p class="precio">Q5.50</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="Carnes/chuleta de cerdo.jpg" alt="Chuleta de cerdo">
+      <div class="producto-info">
+        <h3>Chuleta de Cerdo (1kg)</h3>
+        <p>Perfecta para freír o a la parrilla, sabor intenso.</p>
+        <p class="precio">Q6.30</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="Carnes/Carne_molida.jpg" alt="Carne molida">
+      <div class="producto-info">
+        <h3>Carne Molida (500g)</h3>
+        <p>Ideal para albóndigas, hamburguesas o salsas.</p>
+        <p class="precio">Q3.25</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="Carnes/costilla-de-cerdo.jpg" alt="Costillas de cerdo">
+      <div class="producto-info">
+        <h3>Costillas de Cerdo (1kg)</h3>
+        <p>Para asar o cocinar con salsa BBQ. Muy sabrosas.</p>
+        <p class="precio">Q7.10</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+   </div>
+
+  <footer style="
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 60px;
+  ">
+    <p>
+       MISAEL HERRERA 3190-25-6346, MILTON PEREZ 3190-25-9787, GALILEA 3190-25-8046
+  </footer>
+
+</body>
+</html>

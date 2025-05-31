@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lácteos - Supermercado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+    }
+
+    .producto-info h3 {
+      margin: 10px 0 5px;
+      color: #0d47a1;
+    }
+
+    .producto-info p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .precio {
+      color: #2196f3;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .boton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lácteos del Supermercado</h1>
+  </header>
+
+  <div class="contenedor">
+
+    <div class="producto">
+      <img src="lacteos/leche_entera.webp" alt="Leche Entera">
+      <div class="producto-info">
+        <h3>Leche Entera (1L)</h3>
+        <p>Leche fresca de vaca, rica en calcio y vitaminas.</p>
+        <p class="precio">Q0.99</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="lacteos/yoguty_natural.jpeg" alt="Yogur Natural">
+      <div class="producto-info">
+        <h3>Yogur Natural (500g)</h3>
+        <p>Ideal para desayunos y postres. Bajo en grasa.</p>
+        <p class="precio">Q1.50</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="lacteos/queso-fresco-casero.jpg" alt="Queso Fresco">
+      <div class="producto-info">
+        <h3>Queso Fresco (200g)</h3>
+        <p>Textura suave y sabor cremoso. Perfecto para ensaladas.</p>
+        <p class="precio">Q2.30</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="lacteos/mantequilla.webp" alt="Mantequilla">
+      <div class="producto-info">
+        <h3>Mantequilla (250g)</h3>
+        <p>Mantequilla tradicional, ideal para cocinar y untar.</p>
+        <p class="precio">Q2.00</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="lacteos/mozzarella.webp" alt="Queso Mozzarella">
+      <div class="producto-info">
+        <h3>Queso Mozzarella (200g)</h3>
+        <p>Perfecto para pizzas, lasañas y gratinados.</p>
+        <p class="precio">Q2.80</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer style="
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 60px;
+  ">
+    <p>
+        MISAEL HERRERA 3190-25-6346, MILTON PEREZ 3190-25-9787, GALILEA 3190-25-8046
+    </p>
+  </footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

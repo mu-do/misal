@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carrito {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border: 2px solid #2196f3;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.2);
+    }
+
+    .carrito h2 {
+      color: #2196f3;
+      text-align: center;
+    }
+
+    .producto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .producto:last-child {
+      border-bottom: none;
+    }
+
+    .producto-nombre {
+      font-weight: bold;
+      flex: 2;
+    }
+
+    .controles {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      flex: 1;
+    }
+
+    .controles button {
+      background-color: #2196f3;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .controles button:hover {
+      background-color: #1976d2;
+    }
+
+    .producto-precio {
+      flex: 1;
+      text-align: right;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #0d47a1;
+    }
+
+    .boton-comprar {
+      display: block;
+      width: 100%;
+      background-color: #2196f3;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .boton-comprar:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carrito">
+    <h2>Carrito de Compras</h2>
+
+    <div class="producto" data-precio="2.5">
+      <span class="producto-nombre">Manzanas (1kg)</span>
+      <div class="controles">
+        <button class="menos">-</button>
+        <span class="cantidad">1</span>
+        <button class="mas">+</button>
+        <button class="eliminar">🗑️</button>
+      </div>
+      <span class="producto-precio"> Q2.50</span>
+    </div>
+
+    <div class="producto" data-precio="1.2">
+      <span class="producto-nombre">Pan integral</span>
+      <div class="controles">
+        <button class="menos">-</button>
+        <span class="cantidad">1</span>
+        <button class="mas">+</button>
+        <button class="eliminar">🗑️</button>
+      </div>
+      <span class="producto-precio">Q1.20</span>
+    </div>
+
+    <div class="producto" data-precio="0.99">
+      <span class="producto-nombre">Leche (1L)</span>
+      <div class="controles">
+        <button class="menos">-</button>
+        <span class="cantidad">1</span>
+        <button class="mas">+</button>
+        <button class="eliminar">🗑️</button>
+      </div>
+      <span class="producto-precio">Q0.99</span>
+    </div>
+
+    <div class="total">Total: Q4.69</div>
+    <button class="boton-comprar">Proceder al Pago</button>
+  </div>
+
+  <script>
+    function actualizarTotal() {
+      let total = 0;
+      document.querySelectorAll(".producto").forEach(producto => {
+        const precioUnitario = parseFloat(producto.dataset.precio);
+        const cantidad = parseInt(producto.querySelector(".cantidad").textContent);
+        const precioTotal = precioUnitario * cantidad;
+        producto.querySelector(".producto-precio").textContent = `$${precioTotal.toFixed(2)}`;
+        total += precioTotal;S
+      });
+      document.querySelector(".total").textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    document.querySelectorAll(".mas").forEach(boton => {
+      boton.addEventListener("click", () => {
+        const cantidad = boton.parentElement.querySelector(".cantidad");
+        cantidad.textContent = parseInt(cantidad.textContent) + 1;
+        actualizarTotal();
+      });
+    });
+
+    document.querySelectorAll(".menos").forEach(boton => {
+      boton.addEventListener("click", () => {
+        const cantidad = boton.parentElement.querySelector(".cantidad");
+        if (parseInt(cantidad.textContent) > 1) {
+          cantidad.textContent = parseInt(cantidad.textContent) - 1;
+          actualizarTotal();
+        }
+      });
+    });
+
+    document.querySelectorAll(".eliminar").forEach(boton => {
+      boton.addEventListener("click", () => {
+        const producto = boton.closest(".producto");
+        producto.remove();
+        actualizarTotal();
+      });
+    });
+
+   
+    actualizarTotal();
+  </script>
+
+
+  </script>
+
+  <footer style="
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 60px;
+  ">
+    <p>
+        MISAEL HERRERA 3190-25-6346, MILTON PEREZ 3190-25-9787, GALILEA 3190-25-8046
+    </p>
+  </footer>
+</body>
+</html>
+
+</body>
+</html>
+

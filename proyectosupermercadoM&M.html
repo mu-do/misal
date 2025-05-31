@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Supermercado - Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #1e3a8a; /* azul oscuro */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #2563eb; /* azul medio */
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #1e40af; /* azul mas oscuro */
+            border-radius: 4px;
+        }
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #1e3a8a;
+        }
+        .promociones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .promo-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .promo-card h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .promociones {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Bienvenido a Nuestro Supermercado</h1>
+    <nav>
+        <ul>
+            <li><a href="proyectosupermercadoM&M.html">Inicio</a></li>
+            <li><a href="Frutas.html">Frutas</a></li>
+            <li><a href="Verduras.html">Verduras</a></li>
+            <li><a href="Lacteos.html">Lácteos</a></li>
+            <li><a href="Carnes.html">Carnes</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="Miperfil.html">Mi Perfil</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Promociones Actuales</h2>
+    <div class="promociones">
+        <div class="promo-card">
+            <h3>Rebajas en Frutas</h3>
+            <p>10% de descuento en manzanas, bananas y naranjas.</p>
+        </div>
+        <div class="promo-card">
+            <h3>Productos Nuevos</h3>
+            <p>Llegaron nuevos yogures orgánicos y frescos.</p>
+        </div>
+        <div class="promo-card">
+            <h3>Oferta en Carnes</h3>
+            <p>30% de descuento en cortes selectos durante el fin de semana.</p>
+        </div>
+        <div class="promo-card">
+            <h3>Promoción Verduras</h3>
+            <p>Compra 2 y lleva 3 en tomate y cebolla.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>
+       MISAEL HERRERA 3190-25-6346, MILTON PEREZ 3190-25-9787, GALILEA VASQUEZ 3190-25-8046
+    </p>
+</footer>
+</body>
+</html>
+

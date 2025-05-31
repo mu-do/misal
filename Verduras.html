@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verduras - Supermercado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+    }
+
+    .producto-info h3 {
+      margin: 10px 0 5px;
+      color: #0d47a1;
+    }
+
+    .producto-info p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .precio {
+      color: #2196f3;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .boton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #1976d2;
+    }
+
+    footer {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Verduras del Supermercado</h1>
+  </header>
+
+  <div class="contenedor">
+
+    <div class="producto">
+      <img src="verduras/lechuga.jpg" alt="Lechuga">
+      <div class="producto-info">
+        <h3>Lechuga</h3>
+        <p>Fresca, ideal para ensaladas y comidas ligeras.</p>
+        <p class="precio">Q1.50 / unidad</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="verduras/tomate.jpeg"Tomates">
+      <div class="producto-info">
+        <h3>Tomates</h3>
+        <p>Jugosos y rojos, perfectos para salsas y ensaladas.</p>
+        <p class="precio">Q2.00 / kg</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="verduras/zanahoria.jpg">
+      <div class="producto-info">
+        <h3>Zanahorias</h3>
+        <p>Ricas en vitamina A, crujientes y sabrosas.</p>
+        <p class="precio">Q1.80 / kg</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="verduras/brocoli.jpeg" alt="Brócoli">
+      <div class="producto-info">
+        <h3>Brócoli</h3>
+        <p>Fuente de fibra y minerales, excelente al vapor.</p>
+        <p class="precio">Q2.90 / unidad</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="verduras/pimientos.jpg"Pimientos">
+      <div class="producto-info">
+        <h3>Pimientos</h3>
+        <p>Coloridos y versátiles, ideales para salteados y guisos.</p>
+        <p class="precio">Q3.20 / kg</p>
+        <button class="boton">Agregar al carrito</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>MISAEL HERRERA 3190-25-6346, MILTON PEREZ 3190-25-9787, GALILEA 3190-25-8046 </p>
+  </footer>
+
+</body>
+</html>
+
